@@ -12,7 +12,7 @@
     <artifactId>Ecodation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring_blog</name>
-    <description>Ecodation_spring_blog</description>
+    <description>spring_blog</description>
 
     <!--properties-->
     <properties>
