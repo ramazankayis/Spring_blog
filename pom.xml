@@ -11,7 +11,7 @@
     <groupId>com.ramazankayis</groupId>
     <artifactId>Ecodation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Ecodation_spring_blog</name>
+    <name>spring_blog</name>
     <description>Ecodation_spring_blog</description>
 
     <!--properties-->
