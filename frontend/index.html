@@ -108,7 +108,7 @@
                                     <label for="email" class="text-muted">email </label>
                                 </span>
                                 <span class="col-md-9">
-                                    <input type="emailLogin" name="emailLogin" id="emailLogin" class="form-control">
+                                    <input type="emailLogin" name="emailLogin" id="emailLogin" class="form-control" required>
                                     <div id="validation_email" style="font-size: 18px;" class="text-danger"></div>
                                 </span>
                             </div>
@@ -119,7 +119,7 @@
                                     <label for="password" class="text-muted">password </label>
                                 </span>
                                 <span class="col-md-9"> 
-                                    <input type="passwordLogin" name="passwordLogin" id="passwordLogin" class="form-control"></span>
+                                    <input type="passwordLogin" name="passwordLogin" id="passwordLogin" class="form-control" required></span>
                                     <div id="validation_password" style="font-size: 18px;" class="text-danger"></div>
                             </div>
 
@@ -145,11 +145,11 @@
         </div>
     </div>
     <!-- register modal -->
-    <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
+    <div class="modal fade" id="register"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
         <div class="modal-dialog-centered modal-dialog  ">
             <div class="modal-content bg-dark ">
                 <div class="modal-header">
-                    <h5 class="modal-title" >Üye Ol</h5>
+                    <h5 class="modal-title">Üye Ol</h5>
                     <button type="button" class="btn-close y" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -163,8 +163,8 @@
                                     <label for="name_surname" class="text-white">Adınız Soyadınız</label>
                                 </span>
                                 <span class="col-md-9">
-                                    <input type="text" name="name_surname" id="name_surname" class="form-control" autofocus>
-                                    <div id="validation_name" style="font-size: 18px;" class="text-danger"></div>
+                                    <input type="text" name="name_surname" id="name_surname" class="form-control" autofocus required>
+                                    <div id="validation_name_r" style="font-size: 18px;" class="text-danger"></div>
                                     </span>
                             </div>
                             <!-- email -->
@@ -173,8 +173,8 @@
                                     <label for="email" class="text-white">email </label>
                                 </span>
                                 <span class="col-md-9">
-                                    <input type="text" name="email" id="email" class="form-control">
-                                    <div id="validation_email" style="font-size: 18px;" class="text-danger"></div>
+                                    <input type="text" name="email_r" id="email_r" class="form-control" required>
+                                    <div id="validation_email_r" style="font-size: 18px;" class="text-danger"></div>
                                 </span>
                             </div>
 
@@ -184,8 +184,8 @@
                                     <label for="password" class="text-white">password </label>
                                 </span>
                                 <span class="col-md-9">
-                                    <input type="text" name="password" id="password" class="form-control"></span>
-                                    <div id="validation_password" style="font-size: 18px;" class="text-danger"></div>
+                                    <input type="text" name="password_r" id="password_r" class="form-control" required></span>
+                                    <div id="validation_password_r" style="font-size: 18px;" class="text-danger"></div>
                             </div>
 
                             <!-- tel number -->
@@ -195,8 +195,8 @@
                                     </label>
                                 </span>
                                 <span class="col-md-9">
-                                    <input type="text" name="tel_number" id="tel_number" class="form-control">
-                                    <div id="validation_number" style="font-size: 18px;" class="text-danger"></div>
+                                    <input type="text" name="tel_number" id="tel_number" class="form-control" required>
+                                    <div id="validation_number_r" style="font-size: 18px;" class="text-danger"></div>
                                     </span>
                             </div>
 
