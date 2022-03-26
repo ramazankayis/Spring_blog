@@ -6,22 +6,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
 
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 
-    <!-- external css -->
-    <link rel="stylesheet" href="style.css">
+  <!-- external css -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Jquery ui  css and js    -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- Jquery ui  css and js    -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 
@@ -32,7 +32,9 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">LOGO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,11 +53,12 @@
 
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0 mr-3">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa fa-user"> </i> Üye
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Üye Girişi</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#login" href="#">Üye Girişi</a></li>
                             <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#register" href="#">Üye
                                     Ol</a></li>
                             <li>
@@ -81,47 +84,116 @@
 
     <!-- login modal -->
 
+    <div class="modal fade" id="login">
+        <div class="modal-dialog-centered modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase" id="exampleModalLongTitle">
+                        Üye Girişi
+                    </h5>
+                    <button type="button" class="cl
+                    ose" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center text-success">Login</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="form-group">
+                                <span class="col-md-3">
+                                    <label for="email" class="text-muted">email </label></span>
+                                <span class="col-md-9">
+                                    <input type="email" name="email" id="email" class="form-control" required /></span>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-3">
+                                    <label for="password" class="text-muted">password
+                                    </label></span>
+                                <span class="col-md-9">
+                                    <input type="password" name="password" id="password" class="form-control"
+                                        required /></span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="reset" class="text-uppercase btn btn-danger" value="Temizle" />
+                                <input type="submit" class="text-uppercase btn btn-primary" value="Gönder" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Kapat
+                    </button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- register modal -->
     <div class="modal fade" id="register">
         <div class="modal-dialog-centered modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-uppercase " id="exampleModalLongTitle">Üye ol </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title">Üye Ol</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <h3 class="text-center text-success">Register</h3>
                     <div class="container">
                         <div class="row">
+                            <!-- adı -->
                             <div class="form-group">
-                                <span class="col-md-3"> <label for="name_surname" class="text-muted">Adınız
-                                        Soyadınız</label></span>
-                                <span class="col-md-9"> <input type="text" name="name_surname" id="name_surname"
-                                        class="form-control" required autofocus></span>
+                                <span class="col-md-3"> 
+                                    <label for="name_surname" class="text-muted">AdınızSoyadınız</label>
+                                </span>
+                                <span class="col-md-9"> 
+                                    <input type="text" name="name_surname" id="name_surname"
+                                        class="form-control" autofocus>
+                                        <div id="validation_name" style="font-size: 18px;" class="text-danger"></div>
+                                    </span>
                             </div>
+                            <!-- email -->
                             <div class="form-group">
-                                <span class="col-md-3"> <label for="email" class="text-muted">email </label></span>
-                                <span class="col-md-9"> <input type="email" name="email" id="email" class="form-control"
-                                        required></span>
+                                <span class="col-md-3"> 
+                                    <label for="email" class="text-muted">email </label>
+                                </span>
+                                <span class="col-md-9">
+                                    <input type="email" name="email" id="email" class="form-control">
+                                    <div id="validation_email" style="font-size: 18px;" class="text-danger"></div>
+                                </span>
                             </div>
 
+                            <!-- password -->
                             <div class="form-group">
-                                <span class="col-md-3"> <label for="password" class="text-muted">password
-                                    </label></span>
-                                <span class="col-md-9"> <input type="password" name="password" id="password"
-                                        class="form-control" required></span>
+                                <span class="col-md-3"> 
+                                    <label for="password" class="text-muted">password </label>
+                                </span>
+                                <span class="col-md-9"> 
+                                    <input type="password" name="password" id="password" class="form-control"></span>
+                                    <div id="validation_password" style="font-size: 18px;" class="text-danger"></div>
                             </div>
+
+                            <!-- tel number -->
                             <div class="form-group">
-                                <span class="col-md-3"> <label for="repassword" class="text-muted">repassword
-                                    </label></span>
-                                <span class="col-md-9"> <input type="password" name="repassword" id="repassword"
-                                        class="form-control" required></span>
+                                <span class="col-md-3"> 
+                                    <label for="tel_number" class="text-muted">Telefon
+                                    </label>
+                                </span>
+                                <span class="col-md-9"> 
+                                    <input type="text" name="tel_number" id="tel_number"
+                                        class="form-control">
+                                        <div id="validation_number" style="font-size: 18px;" class="text-danger"></div>
+                                    </span>
                             </div>
+
+                            <!-- reset,submit button -->
                             <div class="form-group mt-3">
                                 <input type="reset" class="text-uppercase btn btn-danger" value="Temizle">
-                                <input type="submit" class="text-uppercase btn btn-primary" value="Gönder">
+                                <input id="btnSubmit" type="submit" class="text-uppercase btn btn-primary" value="Gönder">
                             </div>
                         </div>
                     </div>
@@ -129,8 +201,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">Save</button>
                 </div>
             </div>
         </div>
@@ -170,10 +242,19 @@
                             <div class="card-body">
                                 <h5 class="card-title">Başlık 1</h5>
                                 <p class="card-text line-clamp10">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero nemo pariatur iure sequi iste quia laudantium ut, eum cum est exercitationem molestiae, labore dolores cumque maiores odit deleniti fugiat. Culpa vero a itaque nesciunt incidunt
-                                    aliquid officia earum, sunt magnam corrupti natus accusantium commodi est inventore totam vitae! Quisquam dolorum consectetur veniam magni, quo veritatis porro ipsam. Quidem, est? Fugiat blanditiis sequi nisi? Harum
-                                    fuga impedit, expedita unde consequuntur quisquam. Ea dolore aperiam asperiores ipsam numquam, sunt, recusandae, voluptatibus repellat quam mollitia rem cumque velit ullam at voluptatum magni. Quisquam odit vitae unde
-                                    tempora rem nihil dolore laudantium sequi a, eius reiciendis vero iure soluta, obcaecati ducimus accusantium dolorum asperiores consequatur aperiam eum veniam esse mollitia facilis. Neque, recusandae.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero nemo
+                                    pariatur iure sequi iste quia laudantium ut, eum cum est exercitationem molestiae,
+                                    labore dolores cumque maiores odit deleniti fugiat. Culpa vero a itaque nesciunt
+                                    incidunt
+                                    aliquid officia earum, sunt magnam corrupti natus accusantium commodi est inventore
+                                    totam vitae! Quisquam dolorum consectetur veniam magni, quo veritatis porro ipsam.
+                                    Quidem, est? Fugiat blanditiis sequi nisi? Harum
+                                    fuga impedit, expedita unde consequuntur quisquam. Ea dolore aperiam asperiores
+                                    ipsam numquam, sunt, recusandae, voluptatibus repellat quam mollitia rem cumque
+                                    velit ullam at voluptatum magni. Quisquam odit vitae unde
+                                    tempora rem nihil dolore laudantium sequi a, eius reiciendis vero iure soluta,
+                                    obcaecati ducimus accusantium dolorum asperiores consequatur aperiam eum veniam esse
+                                    mollitia facilis. Neque, recusandae.
                                 </p>
                                 <button class="btn btn-primary mb-3">Detay ...</button>
                                 <div class="card_tag">
@@ -203,10 +284,19 @@
                             <div class="card-body">
                                 <h5 class="card-title">Başlık 1</h5>
                                 <p class="card-text line-clamp10">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero nemo pariatur iure sequi iste quia laudantium ut, eum cum est exercitationem molestiae, labore dolores cumque maiores odit deleniti fugiat. Culpa vero a itaque nesciunt incidunt
-                                    aliquid officia earum, sunt magnam corrupti natus accusantium commodi est inventore totam vitae! Quisquam dolorum consectetur veniam magni, quo veritatis porro ipsam. Quidem, est? Fugiat blanditiis sequi nisi? Harum
-                                    fuga impedit, expedita unde consequuntur quisquam. Ea dolore aperiam asperiores ipsam numquam, sunt, recusandae, voluptatibus repellat quam mollitia rem cumque velit ullam at voluptatum magni. Quisquam odit vitae unde
-                                    tempora rem nihil dolore laudantium sequi a, eius reiciendis vero iure soluta, obcaecati ducimus accusantium dolorum asperiores consequatur aperiam eum veniam esse mollitia facilis. Neque, recusandae.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero nemo
+                                    pariatur iure sequi iste quia laudantium ut, eum cum est exercitationem molestiae,
+                                    labore dolores cumque maiores odit deleniti fugiat. Culpa vero a itaque nesciunt
+                                    incidunt
+                                    aliquid officia earum, sunt magnam corrupti natus accusantium commodi est inventore
+                                    totam vitae! Quisquam dolorum consectetur veniam magni, quo veritatis porro ipsam.
+                                    Quidem, est? Fugiat blanditiis sequi nisi? Harum
+                                    fuga impedit, expedita unde consequuntur quisquam. Ea dolore aperiam asperiores
+                                    ipsam numquam, sunt, recusandae, voluptatibus repellat quam mollitia rem cumque
+                                    velit ullam at voluptatum magni. Quisquam odit vitae unde
+                                    tempora rem nihil dolore laudantium sequi a, eius reiciendis vero iure soluta,
+                                    obcaecati ducimus accusantium dolorum asperiores consequatur aperiam eum veniam esse
+                                    mollitia facilis. Neque, recusandae.
                                 </p>
                                 <button class="btn btn-primary">Detay ...</button>
                                 <div class="card_tag">
@@ -241,10 +331,19 @@
                             <div class="card-body">
                                 <h5 class="card-title">Başlık 1</h5>
                                 <p class="card-text line-clamp10">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero nemo pariatur iure sequi iste quia laudantium ut, eum cum est exercitationem molestiae, labore dolores cumque maiores odit deleniti fugiat. Culpa vero a itaque nesciunt incidunt
-                                    aliquid officia earum, sunt magnam corrupti natus accusantium commodi est inventore totam vitae! Quisquam dolorum consectetur veniam magni, quo veritatis porro ipsam. Quidem, est? Fugiat blanditiis sequi nisi? Harum
-                                    fuga impedit, expedita unde consequuntur quisquam. Ea dolore aperiam asperiores ipsam numquam, sunt, recusandae, voluptatibus repellat quam mollitia rem cumque velit ullam at voluptatum magni. Quisquam odit vitae unde
-                                    tempora rem nihil dolore laudantium sequi a, eius reiciendis vero iure soluta, obcaecati ducimus accusantium dolorum asperiores consequatur aperiam eum veniam esse mollitia facilis. Neque, recusandae.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero nemo
+                                    pariatur iure sequi iste quia laudantium ut, eum cum est exercitationem molestiae,
+                                    labore dolores cumque maiores odit deleniti fugiat. Culpa vero a itaque nesciunt
+                                    incidunt
+                                    aliquid officia earum, sunt magnam corrupti natus accusantium commodi est inventore
+                                    totam vitae! Quisquam dolorum consectetur veniam magni, quo veritatis porro ipsam.
+                                    Quidem, est? Fugiat blanditiis sequi nisi? Harum
+                                    fuga impedit, expedita unde consequuntur quisquam. Ea dolore aperiam asperiores
+                                    ipsam numquam, sunt, recusandae, voluptatibus repellat quam mollitia rem cumque
+                                    velit ullam at voluptatum magni. Quisquam odit vitae unde
+                                    tempora rem nihil dolore laudantium sequi a, eius reiciendis vero iure soluta,
+                                    obcaecati ducimus accusantium dolorum asperiores consequatur aperiam eum veniam esse
+                                    mollitia facilis. Neque, recusandae.
                                 </p>
                                 <button class="btn btn-primary">Detay ...</button>
                                 <div class="card_tag">
@@ -275,10 +374,19 @@
                             <div class="card-body">
                                 <h5 class="card-title">Başlık 1</h5>
                                 <p class="card-text line-clamp10">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero nemo pariatur iure sequi iste quia laudantium ut, eum cum est exercitationem molestiae, labore dolores cumque maiores odit deleniti fugiat. Culpa vero a itaque nesciunt incidunt
-                                    aliquid officia earum, sunt magnam corrupti natus accusantium commodi est inventore totam vitae! Quisquam dolorum consectetur veniam magni, quo veritatis porro ipsam. Quidem, est? Fugiat blanditiis sequi nisi? Harum
-                                    fuga impedit, expedita unde consequuntur quisquam. Ea dolore aperiam asperiores ipsam numquam, sunt, recusandae, voluptatibus repellat quam mollitia rem cumque velit ullam at voluptatum magni. Quisquam odit vitae unde
-                                    tempora rem nihil dolore laudantium sequi a, eius reiciendis vero iure soluta, obcaecati ducimus accusantium dolorum asperiores consequatur aperiam eum veniam esse mollitia facilis. Neque, recusandae.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero nemo
+                                    pariatur iure sequi iste quia laudantium ut, eum cum est exercitationem molestiae,
+                                    labore dolores cumque maiores odit deleniti fugiat. Culpa vero a itaque nesciunt
+                                    incidunt
+                                    aliquid officia earum, sunt magnam corrupti natus accusantium commodi est inventore
+                                    totam vitae! Quisquam dolorum consectetur veniam magni, quo veritatis porro ipsam.
+                                    Quidem, est? Fugiat blanditiis sequi nisi? Harum
+                                    fuga impedit, expedita unde consequuntur quisquam. Ea dolore aperiam asperiores
+                                    ipsam numquam, sunt, recusandae, voluptatibus repellat quam mollitia rem cumque
+                                    velit ullam at voluptatum magni. Quisquam odit vitae unde
+                                    tempora rem nihil dolore laudantium sequi a, eius reiciendis vero iure soluta,
+                                    obcaecati ducimus accusantium dolorum asperiores consequatur aperiam eum veniam esse
+                                    mollitia facilis. Neque, recusandae.
                                 </p>
                                 <button class="btn btn-primary">Detay ...</button>
                                 <div class="card_tag">
@@ -309,10 +417,19 @@
                             <div class="card-body">
                                 <h5 class="card-title">Başlık 1</h5>
                                 <p class="card-text line-clamp10">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero nemo pariatur iure sequi iste quia laudantium ut, eum cum est exercitationem molestiae, labore dolores cumque maiores odit deleniti fugiat. Culpa vero a itaque nesciunt incidunt
-                                    aliquid officia earum, sunt magnam corrupti natus accusantium commodi est inventore totam vitae! Quisquam dolorum consectetur veniam magni, quo veritatis porro ipsam. Quidem, est? Fugiat blanditiis sequi nisi? Harum
-                                    fuga impedit, expedita unde consequuntur quisquam. Ea dolore aperiam asperiores ipsam numquam, sunt, recusandae, voluptatibus repellat quam mollitia rem cumque velit ullam at voluptatum magni. Quisquam odit vitae unde
-                                    tempora rem nihil dolore laudantium sequi a, eius reiciendis vero iure soluta, obcaecati ducimus accusantium dolorum asperiores consequatur aperiam eum veniam esse mollitia facilis. Neque, recusandae.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero nemo
+                                    pariatur iure sequi iste quia laudantium ut, eum cum est exercitationem molestiae,
+                                    labore dolores cumque maiores odit deleniti fugiat. Culpa vero a itaque nesciunt
+                                    incidunt
+                                    aliquid officia earum, sunt magnam corrupti natus accusantium commodi est inventore
+                                    totam vitae! Quisquam dolorum consectetur veniam magni, quo veritatis porro ipsam.
+                                    Quidem, est? Fugiat blanditiis sequi nisi? Harum
+                                    fuga impedit, expedita unde consequuntur quisquam. Ea dolore aperiam asperiores
+                                    ipsam numquam, sunt, recusandae, voluptatibus repellat quam mollitia rem cumque
+                                    velit ullam at voluptatum magni. Quisquam odit vitae unde
+                                    tempora rem nihil dolore laudantium sequi a, eius reiciendis vero iure soluta,
+                                    obcaecati ducimus accusantium dolorum asperiores consequatur aperiam eum veniam esse
+                                    mollitia facilis. Neque, recusandae.
                                 </p>
                                 <button class="btn btn-primary">Detay ...</button>
                                 <div class="card_tag">
@@ -425,14 +542,16 @@
                                 <img src="img/beach-gb20ac2aa8_1920.jpg" alt="Third slide">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
-                          </button>
+                        </button>
                     </div>
 
 
