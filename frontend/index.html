@@ -60,10 +60,15 @@
                             <i class="fa fa-user"> </i> Üye
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Üye Girişi</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#login" href="#" >Üye Girişi</a></li>
                             <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#register" href="#">Üye
                                     Ol</a></li>
+
+                             <li><button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#register">
+                                Modalı Aç
+                              </button></li>
                             <li>
+                                
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">...</a></li>
@@ -85,13 +90,66 @@
     <!-- navbar end  -->
 
     <!-- login modal -->
+    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog-centered modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Üye girişi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center text-success">Login</h3>
+                    <div class="container">
+                        <div class="row">
+                            <form>
+                            <!-- email -->
+                            <div class="form-group">
+                                <span class="col-md-3"> 
+                                    <label for="email" class="text-muted">email </label>
+                                </span>
+                                <span class="col-md-9">
+                                    <input type="emailLogin" name="emailLogin" id="emailLogin" class="form-control">
+                                    <div id="validation_email" style="font-size: 18px;" class="text-danger"></div>
+                                </span>
+                            </div>
 
+                            <!-- password -->
+                            <div class="form-group">
+                                <span class="col-md-3"> 
+                                    <label for="password" class="text-muted">password </label>
+                                </span>
+                                <span class="col-md-9"> 
+                                    <input type="passwordLogin" name="passwordLogin" id="passwordLogin" class="form-control"></span>
+                                    <div id="validation_password" style="font-size: 18px;" class="text-danger"></div>
+                            </div>
+
+                                                   
+
+                            <!-- reset,submit button -->
+                            <div class="form-group mt-3">
+                                <input type="reset" class="text-uppercase btn btn-danger" value="Temizle">
+                                <input id="btnSubmit2" type="submit" class="text-uppercase btn btn-primary" value="Gönder">
+                            </div>
+
+                        </form>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- register modal -->
-    <div class="modal fade" id="register">
+    <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
         <div class="modal-dialog-centered modal-dialog  ">
             <div class="modal-content bg-dark ">
                 <div class="modal-header">
-                    <h5 class="modal-title">Üye Ol</h5>
+                    <h5 class="modal-title" >Üye Ol</h5>
                     <button type="button" class="btn-close y" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
