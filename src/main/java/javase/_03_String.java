@@ -44,5 +44,17 @@ public class _03_String {
         //String nokta(.) koyarak ilerleyebiliyoruz
         System.out.println(kelime.concat("Mysql").trim().toLowerCase().length());
 
+        //String içeriğinin boş mu dolu mu olup olmadığını anlamak
+        System.out.println(kelime.isEmpty());
+        System.out.println(!kelime.isEmpty());
+
+        //subString ==> String parçalama yapmak
+        String yeniKelime = kelime.substring(4);
+        System.out.println(yeniKelime);
+
+        //subString(0,3)
+        String yeniKelime2 = kelime.substring(0,3);  //0<=X<=(3-1)
+        System.out.println(yeniKelime2);
+
     }
 }
