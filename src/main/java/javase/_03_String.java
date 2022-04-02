@@ -3,10 +3,11 @@ package javase;
 public class _03_String {
     public static void main(String[] args) {
 
-        String kelime = "java full stack";
+        String kelime = "java full stack  java javase";
 
-        kelime =kelime.concat(" and reactjs");
+        //kelime =kelime.concat(" and reactjs");
         System.out.println(kelime);
+        System.out.println(kelime.length());
 
         String kelime2= "javaSe";
         System.out.println(kelime.replace(kelime,kelime2));
@@ -20,6 +21,18 @@ public class _03_String {
         //endsWith ==> Bununla mı bitiyor ? evet:true hayır:false
         System.out.println("Bununla mı bitiyor:  "+kelime.endsWith("s"));
 
+
+        //charAt: sıfır(0) indiste başlar
+        //charAt: biz sayı veriririz ilgili indisi bize döndürür
+        //charAt: aramalarda sıklıkla kullanılır.
+        System.out.println(kelime.charAt(14));
+
+        //indexOf veya lastIndexOf =-1 demek bulamadı anlamına geliyor.
+        //indexOf:arama
+        System.out.println("soldan arama: "+ kelime.indexOf("java"));
+
+        //lastIndexOf:
+        System.out.println("sağdan arama: "+kelime.lastIndexOf("java"));
 
     }
 }
