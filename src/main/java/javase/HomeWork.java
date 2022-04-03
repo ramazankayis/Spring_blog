@@ -33,6 +33,19 @@ public class HomeWork {
     //Stringbuilder ile StringBuffer arasındaki farklar ?
     //java By pass value ? ==> memory
 
+    //inheritance abstarct interface polymorphism
+
+    //Software Prensible
+    //Spaggetti code nedir?
+    //clean code nedir?
+    //monad nedir?
+    //solid nedir?
+    //KISS nedir?
+    //CCP nedir ?
+    //YAGNI nedir?
+    //DRY nedir?
+
+
     public static void main(String[] args) {
 
         Scanner klavye = new Scanner(System.in);
