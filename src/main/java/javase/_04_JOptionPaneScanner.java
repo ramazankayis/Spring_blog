@@ -13,6 +13,7 @@ public class _04_JOptionPaneScanner {
         //util
         Scanner klavye=new Scanner(System.in);
 
+
         System.out.println("Lütfen harf giriniz");
         String charKlavye=klavye.nextLine();
         char c1=charKlavye.charAt(0);

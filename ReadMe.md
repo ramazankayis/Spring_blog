@@ -1,13 +1,14 @@
-# Getting Started
+# Ecodation Java Full Stack Developer -1 (1 Şubat 2022)
+* [GitHub](https://github.com/hamitmizrak/Ecodation_JavaFullStack_1)
 
-### Reference Documentation
-Gereksinimler
-Java 11
-intellij idea Ultimate 
+### Gereksinimler
+Java 17 and 11
+intellij idea Ultimate
 Visual Studio Code
 Node js
+---
 
-### Visual Stuidio codes
+## Visual Studio codes
 Extensisons
 - Browser preview
 - Auto Close tag
@@ -27,8 +28,10 @@ Extensisons
 - Project Manager
 - Reactjs code Snippets
 
+---
 
-### Tecnology
+## Tecnology
+##FrontEnd
 - Html5
 - Css3
 - responsive design
@@ -37,6 +40,10 @@ Extensisons
 - Bootstrap
 - react
 
+
+---
+
+## BackEnd
 * javase
 * jdbc crud native
 * hibernate
@@ -46,34 +53,34 @@ Extensisons
 * spring rest
 * spring security
 
+---
 
-BackEnd
-
-
-
-dependency
------------------------------------------------------------------------
-Spring Web
-Spring Data JPA
-Spring Security
-
+## Libraries
 Thymeleaf
 Lombok
 Validation
 
+## Database
 H2 Database
 Mysql
 Postgresql
 
+---
+## dependency
+Spring Web
+Spring Data JPA
+Spring Rest
+Spring Security
+
+---
+# Spring Tools
 Spring Boot DevTools
 Spring Configuration Processor
 Spring Boot Actuator
 
+---
 
-
-
-FrondEnd
------------------------------------------------------------------------
+## Docker Deployment
 
 1.ADIM
 npx create-react-app frontend
@@ -82,7 +89,7 @@ npm start
 code .
 
 2.ADIM
-NOT: node_modules siliyoruz bunu sonrasında 
+NOT: node_modules siliyoruz bunu sonrasında
 npm i
 
 3.ADIM
@@ -91,12 +98,4 @@ npm install axios
 npm install bootstrap --save
 npm install node-sass --save
 
-
-For further reference, please consider the following sections:
-
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-
-### Guides
-
-The following guides illustrate how to use some features concretely:
 
