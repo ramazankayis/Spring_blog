@@ -12,11 +12,19 @@ public class _04_JOptionPaneScanner {
         //Scanner Type Safe(Tür Güvenliği)
         //util
         Scanner klavye=new Scanner(System.in);
+
+        System.out.println("Lütfen harf giriniz");
+        String charKlavye=klavye.nextLine();
+        char c1=charKlavye.charAt(0);
+        System.out.println(c1);
+
         //Stringte alt satıra geçmek (nextLine)
 //        System.out.println("Lütfen bir şeyler yazınız");
 //        String kelime=klavye.nextLine();
 //        System.out.println(kelime);
 //        System.out.println("diğer");
+
+
 
 //        System.out.println("*********");
         System.out.println("Lütfen bir sayı giriniz");
