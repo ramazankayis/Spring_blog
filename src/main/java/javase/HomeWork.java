@@ -27,6 +27,12 @@ public class HomeWork {
 //    1.sayı mutlak değeri abs
 //    2.sayınını karekökö  çıkan sayıyı yuvarlama sqrt , round
 
+    //Random Math , Random object nedir ?
+
+    //cast: valueOf ==>toString veya parseInt
+    //Stringbuilder ile StringBuffer arasındaki farklar ?
+
+
     public static void main(String[] args) {
 
         Scanner klavye = new Scanner(System.in);
