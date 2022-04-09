@@ -1,0 +1,21 @@
+package com.ramazankayis.dao;
+
+import com.ramazankayis.db.DatabaseConnection;
+
+import java.sql.Connection;
+
+//generics
+public interface IDaoConnection <T>{
+    //gövdesiz metot {} yoksa
+
+    //CRUD
+    public void create(T t);
+    public void delete(T t);
+    public void update(T t);
+    public java.util.ArrayList<T> list();
+
+    //gövdeli metot
+    default Connection getInterfaceConnection(){
+        return DatabaseConnection.getInstance().getConnection();
+    }
+}
