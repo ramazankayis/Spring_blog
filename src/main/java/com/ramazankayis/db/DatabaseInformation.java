@@ -17,14 +17,14 @@ public class DatabaseInformation {
     public DatabaseInformation() {
         //Mysql
         this.user="root";
-        this.password="root";
-        this.url="jdbc:mysql//localhost:3306/springboot";
-        this.forNameData="com.mysql.jdbc.Driver";
+        this.password="123456";
+        this.url="jdbc:mysql://localhost:3306/springboot";
+        this.forNameData="com.mysql.cj.jdbc.Driver";
 
         //Postgresql
         /*this.user = "root";
         this.password = "root";
-        this.url = "jdbc:postgresql//localhost:5432/springboot";
+        this.url = "jdbc:postgresql://localhost:5432/springboot";
         this.forNameData = "org.postgresql.Driver";*/
 
         //H2DB
@@ -46,3 +46,5 @@ public class DatabaseInformation {
 
 
 }
+
+
