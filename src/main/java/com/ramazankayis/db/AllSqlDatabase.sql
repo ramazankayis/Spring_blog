@@ -7,7 +7,14 @@ use springboot;
 
 -- Insert
 INSERT INTO `springboot`.`admin` (`name`, `surname`) VALUES ('ramazan2', 'kayis2');
+-- delete
 
+-- update
+
+-- select
+
+-- PrimaryKey : birincil anahtar(esas anahtar)
+-- ForeignKey : ikincil anahtar (başkasının primary key)
 
 -- create table
 CREATE TABLE `springboot`.`admin` (

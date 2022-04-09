@@ -13,6 +13,6 @@ public class AdminDto {
     private int  id;
     private String name;
     private String surname;
-    private java.util.Date createDate;
+    private java.util.Date createdDate;
 
 }
