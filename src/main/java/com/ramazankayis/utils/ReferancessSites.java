@@ -1,4 +1,4 @@
-package com.ramzankayis.utils;
+package com.ramazankayis.utils;
 
 public class ReferancessSites {
 
